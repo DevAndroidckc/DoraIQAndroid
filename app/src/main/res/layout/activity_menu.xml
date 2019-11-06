@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anhnen1"
+    tools:context=".Menu">
+
+    <!--<ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/anhnen1" />-->
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="178dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_doraemon" />
+
+    <TextView
+        android:id="@+id/textView_Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Nguyễn Thanh Võ"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <ImageButton
+        android:id="@+id/imageButton_Coin"
+        android:layout_width="43dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_Username"
+        app:srcCompat="@mipmap/ic_coin1" />
+
+    <TextView
+        android:id="@+id/textView_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="13dp"
+        android:text="x9999"
+        android:textColor="#942A07"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_Coin"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Username" />
+
+    <Button
+        android:id="@+id/button_Manageruser"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/my_button1"
+        android:text="Quản lí tài khoản"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton_Coin"
+        android:onClick="Manager"/>
+
+    <Button
+        android:id="@+id/button_Newgame"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Trò chơi mới"
+        android:background="@drawable/my_button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Manageruser"
+        android:onClick="Option" />
+    <Button
+        android:id="@+id/button_History"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Lịch sử"
+        android:background="@drawable/my_button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Newgame" />
+    <Button
+        android:id="@+id/button_Rank"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Bảng xếp hạng"
+        android:background="@drawable/my_button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_History" />
+    <Button
+        android:id="@+id/button_Buycredit"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Mua Credit"
+        android:background="@drawable/my_button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Rank"
+        android:onClick="Buy_Credit"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayGame"
+    android:background="@drawable/anhnen1">
+
+    <TextView
+        android:id="@+id/textView_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:text="Nguyễn Thanh Võ"
+        android:textColor="#A52B04"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="30dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toEndOf="@+id/textView_Name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_life" />
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="30dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_life"
+        app:layout_constraintTop_toBottomOf="@id/imageView16"/>
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="30dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_life" />
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="30dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView18"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_life" />
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="30dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_life" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_coin1" />
+
+    <TextView
+        android:id="@+id/textView_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="2dp"
+        android:text="9999"
+        android:textColor="#942A07"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView15"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_Diem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:text="Điểm: 0"
+        android:textColor="#A52B04"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView_Cauhoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:textColor="#E28451"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="Câu hỏi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Diem" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="83dp"
+        android:layout_height="93dp"
+        android:background="@drawable/my_button1"
+        android:layout_marginTop="0dp"
+        android:text="1"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Cauhoi" />
+
+    <TextView
+        android:id="@+id/textView_Doancauhoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Giáo án nào sau đây là của Abe ?"
+        android:textColor="#050505"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button_Dapan_A"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/my_button1"
+        android:drawableLeft="@mipmap/ic_dapan_a"
+        android:text="SuSan"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_Doancauhoi" />
+
+    <Button
+        android:id="@+id/button_Dapan_B"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/my_button2"
+        android:drawableLeft="@mipmap/ic_dapan_b"
+        android:text="MẬT VỤ POPPY"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_Dapan_A" />
+
+    <Button
+        android:id="@+id/button_Dapan_C"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/my_button4"
+        android:drawableLeft="@mipmap/ic_dapan_c"
+        android:text="MALPHITE TÌM KIẾM SỰ CHỦ ĐỘNG"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_Dapan_B" />
+
+    <Button
+        android:id="@+id/button_Dapan_D"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/my_button5"
+        android:drawableLeft="@mipmap/ic_dapan_d"
+        android:text="ĐẶC VỤ CHIÊM MỒI QUINN"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_Dapan_C" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:background="#03A9F4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Dapan_D"
+        app:srcCompat="@mipmap/ic_return" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:background="#03A9F4"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton"
+        app:srcCompat="@mipmap/ic_5050" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:background="#03A9F4"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="@+id/imageButton2"
+        app:srcCompat="@mipmap/ic_trogiupkhangia" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:background="#03A9F4"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintTop_toTopOf="@+id/imageButton3"
+        app:srcCompat="@mipmap/ic_dienthoai" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:background="#03A9F4"
+        android:contextClickable="false"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="@+id/imageButton4"
+        app:srcCompat="@mipmap/ic_coin1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
